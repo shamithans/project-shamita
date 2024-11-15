@@ -1,0 +1,217 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffafcc;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.links a {
+  color: #fff;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: #333;
+}
+
+/* Home Page */
+.home {
+  text-align: center;
+  padding: 2rem;
+}
+
+.home h2 {
+  font-size: 2rem;
+  color: #ff577f;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.home .btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #ff577f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home .btn:hover {
+  background-color: #ff80a4;
+}
+
+/* Cakes Page */
+.cakes {
+  padding: 2rem;
+  text-align: center;
+}
+
+.cakes h2 {
+  font-size: 2rem;
+  color: #ff577f;
+  margin-bottom: 1.5rem;
+}
+
+.cakes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Cake Card */
+.cake-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.cake-card:hover {
+  transform: translateY(-5px);
+}
+
+.cake-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cake-card h3 {
+  color: #ff577f;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.cake-card p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.cake-card .btn {
+  padding: 0.6rem 1.2rem;
+  background-color: #ff577f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cake-card .btn:hover {
+  background-color: #ff80a4;
+}
+
+/* Cake Details */
+.cake-details {
+  padding: 2rem;
+  text-align: center;
+}
+
+.cake-details h2 {
+  font-size: 2.5rem;
+  color: #ff577f;
+  margin-bottom: 1rem;
+}
+
+.cake-details p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.cake-details .btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #ff577f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cake-details .btn:hover {
+  background-color: #ff80a4;
+}
+
+/* Cart */
+.cart {
+  padding: 2rem;
+  text-align: center;
+}
+
+.cart h2 {
+  font-size: 2rem;
+  color: #ff577f;
+  margin-bottom: 1rem;
+}
+
+.cart ul {
+  list-style-type: none;
+}
+
+.cart li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar h1 {
+      font-size: 1.2rem;
+  }
+  .navbar .links a {
+      margin-right: 1rem;
+      font-size: 0.9rem;
+  }
+  
+  .home h2, .cakes h2, .cart h2 {
+      font-size: 1.8rem;
+  }
+
+  .home p, .cake-details p, .cart li {
+      font-size: 1rem;
+  }
+
+  .home .btn, .cake-card .btn, .cake-details .btn {
+      padding: 0.6rem 1rem;
+      font-size: 0.9rem;
+  }
+}
